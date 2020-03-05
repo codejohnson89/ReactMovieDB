@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  width: 100% !important;
+  margin-bottom: .5rem;
+  .card-footer {
+    .btn {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
