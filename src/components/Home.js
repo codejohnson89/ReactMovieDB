@@ -47,7 +47,7 @@ function Home() {
                 <h1 className="display-4">Search for your favorite movies!</h1>
                 <Form inline={true}  onSubmit={submitSearch}>
                         <Form.Group controlId="searchbar">
-                            <Form.Control type="input" placeholder="Search movies or TV shows....." value={searchBar} onChange={handleChange} />
+                            <Form.Control type="input" placeholder="Search movies....." value={searchBar} onChange={handleChange} />
                             <Form.Control type="submit" placeholder="Submit"/>
                         </Form.Group>
                     </Form>
