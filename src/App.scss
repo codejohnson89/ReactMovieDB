@@ -47,3 +47,24 @@
     }
   }
 }
+
+.jumbotron {
+  background-image: url('./components/images/film.jpg');
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .container {
+    height: 70%;
+    background: rgba(255,255,255,.8);
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+}
+
+footer {
+  p {
+    color: #fff;
+    font-size: 18px;
+  }
+}

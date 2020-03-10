@@ -1,14 +1,10 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar } from 'react-bootstrap';
 
 export default function Footer() {
     return (
         <footer>
-            <Container>
-                <Row>
-                    <Col sm={12}>Footer Content Goes Here</Col>
-                </Row>
-            </Container>
+            <Navbar bg="dark" variant="dark" fixed="bottom"><p>Built using React JS and Bootstrap.</p></Navbar>           
         </footer>
     )
 }

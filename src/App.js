@@ -7,6 +7,8 @@ import Footer from './components/modules/Footer';
 import Contact from './components/Contact';
 
 import './App.scss';
+import Results from './components/modules/Results';
+import Tvshows from './components/Tvshows';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
     <Header />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/tvshows" exact component={Tvshows} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/results" exact component={Results} />
       </Switch>
       <Footer/>
     </Router>
