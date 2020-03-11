@@ -8,19 +8,13 @@ export default function Header() {
                 <Container>
                     <Nav>
                         <Nav.Item>
-                            <Nav.Link>
-                                <Link exact to="/">Movies</Link>
-                            </Nav.Link>
+                            <Link to="/">Movies</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>
-                                <Link exact to="/tvshows">TV Shows</Link>
-                            </Nav.Link>
+                            <Link to="/tvshows">TV Shows</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>
-                                <Link exact to="/contact">Contact</Link>
-                            </Nav.Link>
+                            <Link to="/contact">Contact</Link>
                         </Nav.Item>
                     </Nav>
                 </Container>

@@ -42,9 +42,9 @@ function Tvshows() {
     // console.log(movieData)
     return (
         <div>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid tvshows">
             <div class="container">
-                <h1 class="display-4">Search for your favorite movies!</h1>
+                <h1 class="display-4">Search for your favorite TV shows!</h1>
                 <Form inline={true}  onSubmit={submitSearch}>
                         <Form.Group controlId="searchbar">
                             <Form.Control type="input" placeholder="Search TV shows....." value={searchBar} onChange={handleChange} />

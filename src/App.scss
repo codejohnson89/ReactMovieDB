@@ -49,11 +49,11 @@
 }
 
 .jumbotron {
-  background-image: url('./components/images/film.jpg');
   height: 55vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 0 -30em;
+  background-attachment: fixed;
   .container {
     height: 70%;
     background: rgba(255,255,255,.8);
@@ -62,9 +62,22 @@
   }
 }
 
+.movies {
+  background-image: url('./components/images/film.jpg');
+}
+
+.tvshows {
+  background-image: url('./components/images/audience.jpg');
+}
+
 footer {
   p {
     color: #fff;
     font-size: 18px;
   }
+}
+
+.navbar-nav {
+  justify-content: space-around;
+    width: 30%;
 }

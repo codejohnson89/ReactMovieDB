@@ -8,7 +8,7 @@ import Results from './modules/Results';
 
 function Home() {
     const [movieData, setMovieData] = useState([]);
-    const [baseURL, setBaseURL] = useState([]);
+    // const [baseURL, setBaseURL] = useState([]);
     const [searchBar, setSearchBar] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [noSearch, setNoSearch] = useState(false);
@@ -19,10 +19,10 @@ function Home() {
         .catch(err => console.log)
     }, [])
 
-    useEffect(() => {
-        Axios.get('https://api.themoviedb.org/3/configuration?api_key=ae6887d6afcef7f295ee5ce27afa2389')
-            .then((res) => setBaseURL(res.data))
-    }, [])
+    // useEffect(() => {
+    //     Axios.get('https://api.themoviedb.org/3/configuration?api_key=ae6887d6afcef7f295ee5ce27afa2389')
+    //         .then((res) => setBaseURL(res.data))
+    // }, [])
 
     function handleChange(e) {
         e.preventDefault()
@@ -42,7 +42,7 @@ function Home() {
     // console.log(movieData)
     return (
         <div>
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron jumbotron-fluid movies">
             <div className="container">
                 <h1 className="display-4">Search for your favorite movies!</h1>
                 <Form inline={true}  onSubmit={submitSearch}>
@@ -56,7 +56,7 @@ function Home() {
             <Container>
                 <Row>
                     {(!noSearch && movieData.map((movie) => <Col sm={12} md={4}>
-                                <Poster key={movie.id} image={movie.backdrop_path} title={movie.title} rating={movie.vote_average}/>
+                                <Poster key={movie.id} image={movie.backdrop_path} title={movie.title} rating={movie.vote_average} date={movie.release_date}/>
                                 </Col>)) || (searchResults.map((search) => <Results key={search.id} date={search.release_date} text={search.original_title} img={`http://image.tmdb.org/t/p/w500${search.backdrop_path}`}/>))}
                 </Row>
             </Container>

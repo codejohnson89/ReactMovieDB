@@ -6,17 +6,18 @@ import firebase from '../firebase';
 export default function Contact() {
 
     const [validated, setValidated] = useState(false);
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [comments, setComments] = useState('')
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [comments, setComments] = useState('');
 
     const handleSubmit = e => {
         const form = e.currentTarget;
         if (form.checkValidity() === false) {
           e.preventDefault();
           e.stopPropagation();
-        }
+        }        
+        e.preventDefault();
     
         setValidated(true);
         console.log(firstName, lastName, email, comments)
