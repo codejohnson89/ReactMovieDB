@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import './App.scss';
 import Results from './components/modules/Results';
 import Tvshows from './components/Tvshows';
+import SignUp from './components/SignUp';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/tvshows" exact component={Tvshows} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/results" exact component={Results} />
+        <Route path="/SignUp" exact component={SignUp} />
       </Switch>
       <Footer/>
     </Router>

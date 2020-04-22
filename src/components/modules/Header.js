@@ -17,6 +17,12 @@ export default function Header() {
                             <Link to="/contact">Contact</Link>
                         </Nav.Item>
                     </Nav>
+                    <Navbar.Collapse className="justify-content-end">
+                        <Navbar.Text>
+                        <Link to="/signup">Sign In</Link>
+                        {/* Signed in as: <a href="#login">Mark Otto</a> */}
+                        </Navbar.Text>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
     )
