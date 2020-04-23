@@ -46,7 +46,7 @@ function LoginForm() {
             <Container>
               <Row>
                 <Col sm={6}>
-                  <Form data-netlify="true" name="signupform" noValidate validated={validated} onSubmit={handleSubmit}>
+                  <Form netlify name="signupform" noValidate validated={validated} onSubmit={handleSubmit}>
                           <Form.Group controlId="formUserName">
                           <Form.Label>User Name</Form.Label>
                           <Form.Control type="email" placeholder="Enter User Name" value={userName} onChange={e => setUserName(e.currentTarget.value)}/>
