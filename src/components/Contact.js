@@ -44,7 +44,7 @@ export default function Contact() {
                 <Col sm={12}>
                 <h2>Any feedback is welcomed!</h2>
                 <p>If you find any errors, let me know!</p>
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <Form data-netlify="true" name="suggestionform" noValidate validated={validated} onSubmit={handleSubmit}>
                         <Form.Group controlId="formFirstName">
                         <Form.Label>First Name</Form.Label>
                         <Form.Control type="input" placeholder="First name" value={firstName} onChange={e => setFirstName(e.currentTarget.value)}/>
